@@ -27,7 +27,20 @@ sudo apt-get install python-dev
 sudo apt-get install libgflags-dev libgoogle-glog-dev liblmdb-dev
 ```
 2.安装caffe  
-建议使用cmake对caffe进行编译安装。在多次安装caffe的经验中，这样是最简单的且不容易出错。
+建议使用cmake对caffe进行编译安装。在多次安装caffe的经验中，这样是最简单的且不容易出错。  
+```
+# in the directory of caffe
+mkdir build
+cd build
+
+# cmake
+cmake ..
+
+# compile and install
+make all
+make install
+make runtest
+```
 详情请参考：http://caffe.berkeleyvision.org/installation.html
 
 ## protobuffer
