@@ -48,7 +48,9 @@ make runtest
 详情请参考：http://caffe.berkeleyvision.org/installation.html
 
 ## protobuffer
-protobuffer是由谷歌研发的对象序列化和反序列化的开源工具，是一种数据描述的工具，其功能类似于xml、json。但是protobuffer最终的数据描述文件是二进制的格式，这就造成了他阅读不直观，但是占用空间小，解析传输速度更快。首先编写描述定义文件proto，再通过protobuffer的编译器protoc对描述文件进行编译，得到可直接使用的二进制文件（支持C++、python、java）。例如，在C++代码中，会直接将demo.proto文件编译成可供代码直接使用的demo.pb.h和demo.pb.cc。  
+protobuffer是由谷歌研发的对象序列化和反序列化的开源工具，是一种数据描述的工具，其功能类似于xml、json。但是protobuffer最终的数据描述文件是二进制的格式，这就造成了他阅读不直观，但是占用空间小，解析传输速度更快。  
+
+首先编写描述定义文件proto，再通过protobuffer的编译器protoc对描述文件进行编译，得到可直接使用的二进制文件（支持C++、python、java）。例如，在C++代码中，会直接将demo.proto文件编译成可供代码直接使用的demo.pb.h和demo.pb.cc。  
 
 在caffe中，blob定义、网络定义等都使用了protobuffer，使用者通过编写网络定义proto文件控制caffe构建网络。  
 
